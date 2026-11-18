@@ -16,7 +16,10 @@
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "ng test --no-watch",
     "test:unit:watch": "ng test --watch",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "generate-icons-androdid": "npx @capacitor-assets generate --android",
+    "generate-icons-ios": "npx @capacitor-assets generate --ios",
+    "generate-icons-pwa": "npx @capacitor-assets generate --pwa"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +29,7 @@
     "@angular/forms": "22.2.5",
     "@angular/platform-browser": "22.2.5",
     "@angular/router": "22.2.5",
+    "@capacitor-community/sqlite": "^8.1.1",
     "@capacitor/app": "8.1.2",
     "@capacitor/core": "8.6.2",
     "@capacitor/haptics": "8.0.2",
@@ -33,7 +37,9 @@
     "@capacitor/status-bar": "8.0.4",
     "@ionic/angular": "^9.0.0",
     "ionicons": "^8.1.0",
+    "jeep-sqlite": "^2.8.0",
     "rxjs": "~7.8.0",
+    "sql.js": "^1.16.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -41,6 +47,7 @@
     "@angular/cli": "22.2.6",
     "@angular/compiler-cli": "22.2.5",
     "@angular/language-service": "22.2.5",
+    "@capacitor/assets": "^4.0.0",
     "@capacitor/cli": "8.6.2",
     "@ionic/angular-toolkit": "^13.0.0",
     "@ionic/eslint-config": "^0.5.0",
